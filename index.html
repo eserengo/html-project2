@@ -8,15 +8,22 @@
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form action="input", id = "survey-form">
             <label for="name" id="name-label" > First name: </label>
-            <input type="text" id ="name" placeholder="Enter your name" name = "name" required>
+            <input type="text" id ="name" placeholder="Enter your name" name = "name" required><br>
             <label for="lname"> Last name: </label>
-            <input type="text" id ="lname">
+            <input type="text" id ="lname"><br>
             <label for="email" id="email-label"> email:</label>
             <input type="email" placeholder="Enter your email" id="email" required>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"><br>
             <label for="number" id="number-label">ID:</label>
-            <input type="number" id="number" placeholder="Enter your ID" min ="0"  max = "9999">
-                      
+            <input type="number" id="number" placeholder="Enter your ID" min ="0"  max = "9999"><br>
+            <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+            <select name="dropdown" id="dropdown">
+                <option disabled selected value="">Select an option</option>
+                <option value="Challenges">Challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Open Source">Open Source</option>
+            </select>
         </form>
     </body>
 </html>
