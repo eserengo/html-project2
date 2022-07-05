@@ -5,25 +5,28 @@
     </head>
     <body>
         <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <p id="description">Thank you for taking the time to help us improve our platform</p>
         <form action="input", id = "survey-form">
             <label for="name" id="name-label" > First name: </label>
-            <input type="text" id ="name" placeholder="Enter your name" name = "name" required><br>
+            <input type="text" id ="name" placeholder="Enter your first name" name = "name" required><br>
             <label for="lname"> Last name: </label>
-            <input type="text" id ="lname"><br>
+            <input type="text" id ="lname" placeholder="Enter your Last Name"><br>
             <label for="email" id="email-label"> email:</label>
             <input type="email" placeholder="Enter your email" id="email" required>
             <input type="submit" value="Submit"><br>
             <label for="number" id="number-label">ID:</label>
             <input type="number" id="number" placeholder="Enter your ID" min ="0"  max = "9999"><br>
+            <div>
             <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
             <select name="dropdown" id="dropdown">
                 <option disabled selected value="">Select an option</option>
                 <option value="Challenges">Challenges</option>
                 <option value="Projects">Projects</option>
                 <option value="Community">Community</option>
-                <option value="Open Source">Open Source</option>
+                <option value="Open Source">Open Source</option><br>
             </select>
+            </div>
+            <div>
             <fieldset>
                 <legend>Select an Option</legend>
                 <div>
@@ -35,6 +38,17 @@
                     <label for="option2">Option2</label>
                 </div>
             </fieldset>
+            </div>
+            <div>
+                <p>Any comments or suggestios?</p>
+                <textarea
+                name="Comments"
+                placeholder="Enter your comment here..."
+                ></textarea><br>
+            </div>
+            <div>
+                <button type="submit" id="submit">Submit</button><br>
+            </div>
         </form>
     </body>
 </html>
